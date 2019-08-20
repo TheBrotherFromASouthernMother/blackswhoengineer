@@ -17,6 +17,16 @@ Women Who Design is happy to support new directories highlighting underrepresent
 
 This project requires API keys from [Twitter](https://twitter.com) to populate the profile data and [Seeker](https://seeker.company) to populate the job posts.
 
+#### NVM (Node Version Manager)
+
+Install nvm to keep track of the node version used for this repo. The easiest manner is to run `sudo nano ~/.bash_profile` and add the following to your bash_profile:
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+Install the specified node version for this repo by running the command `nvm install` (or `nvm use` if the specified version is already installed)
+
 #### Seeker
 
 Seeker is optional. To run this project without Seeker:
