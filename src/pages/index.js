@@ -332,32 +332,6 @@ export const pageQuery = graphql`
             location
             profile_image_url_https
             profile_link_color
-            tags {
-              graphic
-              product
-              manager
-              lead
-              letter
-              creative
-              head
-              illustrator
-              ux
-              founder
-              director
-              research
-              author
-              ceo
-              freelance
-              speaker
-              engineer
-              content
-              developer
-              art
-              web
-              writer
-              systems
-              vp
-            }
             entities {
               url {
                 urls {
