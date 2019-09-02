@@ -7,7 +7,7 @@ module.exports = {
         consumerKey: process.env.TWITTER_CONSUMER_KEY,
         consumerSecret: process.env.TWITTER_CONSUMER_SECRET_KEY,
         bearerToken: process.env.TWITTER_BEARER_TOKEN,
-        twitterIdForFollowingList: "855501234924429312"
+        twitterIdForFollowingList: process.env.TWITTER_ID_FOR_FOLLOWING_LIST
       }
     },
     // {
