@@ -73,15 +73,16 @@ class App extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Nominate | Women Who Design" />
+        <Helmet title="Nominate | Blacks Who Engineer" />
         <Nav theme={"light"} />
         <div className={styles.container}>
           <h1 className={styles.h1}>Nominate</h1>
 
           <p className={styles.p}>
-            If you know a woman whose voice is valuable to the design industry,
-            please fill out the form with her Twitter handle and a few words
-            about why you're nominating her.
+            If you know a Black engineer whose voice is valuable
+            to the software industry,
+            please fill out the form with their Twitter handle and a few words
+            about why you're nominating them.
           </p>
           {!this.state.formSubmitted && (
             <form
