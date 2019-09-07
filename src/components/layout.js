@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
           content: "https://blackswho.engineer"
         },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Blacks Who Design" },
+        { property: "og:site_name", content: "Blacks Who Engineer" },
         { property: "twitter:site", content: "@BlacksWhoEng" },
         { property: "twitter:creator", content: "@DeeBlekPantha" },
         { property: "twitter:card", content: "summary_large_image" },
