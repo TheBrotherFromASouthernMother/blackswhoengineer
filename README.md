@@ -21,7 +21,7 @@ This project requires API keys from [Twitter](https://twitter.com) to populate t
 
 Install nvm to keep track of the node version used for this repo. See here for installation [instructions](https://github.com/nvm-sh/nvm#installation-and-update)
 
-Once installed, simply run the command `nvm install` to download the node version used in this repo. If you happen already have the version downloadded, simply run `nvm use`.
+Once installed, simply run the command `nvm install` to download the node version used in this repo. If you happen to already have the proper node version installed locally, simply run `nvm use`.
 
 #### Seeker
 
