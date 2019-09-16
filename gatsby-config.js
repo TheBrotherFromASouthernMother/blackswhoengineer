@@ -10,12 +10,12 @@ module.exports = {
         twitterIdForFollowingList: "855501234924429312"
       }
     },
-    // {
-    //   resolve: "gatsby-source-seeker",
-    //   options: {
-    //     key: process.env.WWD_SEEKER_KEY
-    //   }
-    // },
+    {
+      resolve: "gatsby-source-seeker",
+      options: {
+        key: process.env.WWD_SEEKER_KEY
+      }
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -27,12 +27,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID
-    //   }
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID
+      }
+    },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
