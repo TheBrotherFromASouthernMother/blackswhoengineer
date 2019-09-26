@@ -332,6 +332,19 @@ export const pageQuery = graphql`
             location
             profile_image_url_https
             profile_link_color
+            tags {
+              engineer
+              developer
+              lead
+              speaker
+              sysadmin
+              manager
+              designer
+              devops
+              founder
+              freelance
+              developer
+            }
             entities {
               url {
                 urls {
