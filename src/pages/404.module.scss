@@ -1,0 +1,41 @@
+@import "../styles/variables.scss";
+
+.container {
+  font-family: $graphik;
+  max-width: 42rem;
+  font-size: 16px;
+  padding: var(--page-shell-padding) var(--page-shell-padding) 48px
+    var(--page-shell-padding);
+  line-height: 1.5;
+  margin: auto;
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    padding: var(--page-shell-padding) var(--page-shell-padding) 64px
+      var(--page-shell-padding);
+  }
+  p {
+    margin-bottom: 12px;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  a {
+    color: var(--gray);
+    &:focus {
+      outline: none;
+      border-radius: 1px;
+      box-shadow: var(--background) 0px 0px 0px 2px, var(--text) 0px 0px 0px 3px;
+      text-decoration: none;
+    }
+  }
+}
+
+.h1 {
+  line-height: 1.25;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 24px;
+  @media (min-width: $desktop) {
+    font-size: 30px;
+  }
+}

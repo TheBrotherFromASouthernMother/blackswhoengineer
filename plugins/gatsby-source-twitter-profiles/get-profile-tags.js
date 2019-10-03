@@ -4,6 +4,8 @@ module.exports = profile => {
   function addDesignerTags(searchTerm, objectTag) {
     if (description.toUpperCase().includes(searchTerm) === true) {
       designerTagsObject[objectTag] = true;
+    } else {
+        designerTagsObject[objectTag] = false;
     }
   }
   addDesignerTags("PRODUCT DESIGN", "product");
@@ -11,20 +13,18 @@ module.exports = profile => {
   addDesignerTags("CONTENT STRATEG", "content");
   addDesignerTags("MANAGER", "manager");
   addDesignerTags("LEAD", "lead");
-  addDesignerTags("AUTHOR", "author");
+  addDesignerTags("DESIGNER", "designer");
   addDesignerTags("SPEAKER", "speaker");
-  addDesignerTags("GRAPHIC DESIGN", "graphic");
   addDesignerTags("ENGINEER", "engineer");
-  addDesignerTags("ILLUSTRAT", "illustrator");
   addDesignerTags("RESEARCH", "research");
-  addDesignerTags("WEB DESIGN", "web");
+  addDesignerTags("DEVOPS", "devops");
   addDesignerTags("FOUNDER", "founder");
   addDesignerTags("HEAD OF", "head");
   addDesignerTags("WRITER", "writer");
   addDesignerTags("FREELANCE", "freelance");
-  addDesignerTags("CREATIVE DIRECT", "creative");
-  addDesignerTags("ART DIRECT", "art");
+  addDesignerTags("SYSADMIN", "sysadmin");
   addDesignerTags("DEVELOPER", "developer");
+  addDesignerTags("ENGINEER", "engineer");
   if (description.toUpperCase().includes("DIRECTOR") === true) {
     if (description.toUpperCase().includes("ART DIRECTOR") === true) {
     } else if (
