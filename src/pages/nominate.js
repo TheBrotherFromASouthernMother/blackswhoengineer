@@ -92,7 +92,7 @@ class App extends React.Component {
             >
               <input type="hidden" name="form-name" value="nominations" />
               <label htmlFor="name" className={styles.label}>
-                What's her Twitter handle?
+                What's their Twitter handle?
               </label>
               <input
                 id="name"
@@ -110,7 +110,7 @@ class App extends React.Component {
                 </p>
               )}
               <label htmlFor="reason" className={styles.label}>
-                Why are you nominating her?
+                Why are you nominating them?
               </label>
               <input
                 id="reason"
