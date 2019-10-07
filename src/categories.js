@@ -1,68 +1,7 @@
 const categories = [
   {
-    title: "Art directors",
-    id: "art",
-    primaryFilter: true
-  },
-  {
-    title: "Authors",
-    id: "author"
-  },
-  {
-    title: "CEOs",
-    id: "ceo",
-    primaryFilter: true
-  },
-  {
-    title: "Content strategists",
-    id: "content"
-  },
-  {
-    title: "Creative directors",
-    id: "creative"
-  },
-  {
-    title: "Design system-ers",
-    id: "systems",
-    primaryFilter: true
-  },
-  {
-    title: "Directors",
-    id: "director",
-    primaryFilter: true
-  },
-  {
-    title: "Developers",
-    id: "developer",
-    primaryFilter: true
-  },
-  {
     title: "Engineers",
-    id: "engineer"
-  },
-  {
-    title: "Founders",
-    id: "founder",
-    primaryFilter: true
-  },
-  {
-    title: "Freelancers",
-    id: "freelance",
-    primaryFilter: true
-  },
-  {
-    title: "Graphic designers",
-    id: "graphic",
-    primaryFilter: true
-  },
-  {
-    title: "Heads of",
-    id: "head",
-    primaryFilter: true
-  },
-  {
-    title: "Illustrators",
-    id: "illustrator",
+    id: "engineer",
     primaryFilter: true
   },
   {
@@ -71,45 +10,50 @@ const categories = [
     primaryFilter: true
   },
   {
-    title: "Letterers",
-    id: "letter"
+    title: "Speakers",
+    id: "speaker",
+    primaryFilter: true
+  },
+  {
+    title: "Sysadmins",
+    id: "sysadmin",
+    primaryFilter: true
   },
   {
     title: "Managers",
-    id: "manager"
-  },
-  {
-    title: "Product designers",
-    id: "product",
+    id: "manager",
     primaryFilter: true
   },
   {
-    title: "Researchers",
-    id: "research",
+    title: "Designers",
+    id: "designer",
     primaryFilter: true
   },
   {
-    title: "Speakers",
-    id: "speaker"
-  },
-  {
-    title: "UX designers",
-    id: "ux",
+    title: "Devops",
+    id: "devops",
     primaryFilter: true
   },
   {
-    title: "VPs",
-    id: "vp",
+    title: "Founders",
+    id: "founder",
     primaryFilter: true
-  },
-  {
-    title: "Web designers",
-    id: "web"
   },
   {
     title: "Writers",
-    id: "writer"
-  }
+    id: "writer",
+    primaryFilter: true
+  },
+  {
+    title: "Freelance",
+    id: "freelance",
+    primaryFilter: true
+  },
+  {
+    title: "Developers",
+    id: "developers",
+    primaryFilter: true
+  },
 ];
 
 export default categories;

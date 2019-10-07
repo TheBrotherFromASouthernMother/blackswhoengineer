@@ -6,8 +6,7 @@ const Loader = props => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.heading}>
-          Women Who Design is a Twitter directory of accomplished women in the
-          design industry
+          Blacks Who Engineer is a Twitter directory of accomplished Black folks in the software industry
         </h1>
         <div className={styles.spinner} />
       </div>

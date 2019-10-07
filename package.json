@@ -1,6 +1,6 @@
 {
-  "name": "women-who-design",
-  "description": "A Twitter directory of accomplished women in the design industry.",
+  "name": "blacks-who-engineer",
+  "description": "A Twitter directory of accomplished Black folks in the software industry.",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
