@@ -165,6 +165,9 @@ class App extends React.Component {
                       this.state.secondaryFiltersVisible ||
                       category.primaryFilter
                     ) {
+                      if (this.state.tagCount[category.id] === 0) {
+                        return;
+                      }
                       return (
                         <FilterItem
                           id={category.id}
