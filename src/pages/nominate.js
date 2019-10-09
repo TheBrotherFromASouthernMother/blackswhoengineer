@@ -81,8 +81,68 @@ class App extends React.Component {
           <p className={styles.p}>
             If you know a Black engineer whose voice is valuable
             to the software industry,
-            please send us a direct message at <a href="https://twitter.com/BlacksWhoEng">@BlacksWhoEng </a> with their Twitter handle and a few words about why you're nominating them.
+            please fill out the form with their Twitter handle and a few words
+            about why you're nominating them.
           </p>
+          {!this.state.formSubmitted && (
+            <form
+              onSubmit={this.handleSubmit}
+              data-netlify="true"
+              name="nominations"
+            >
+              <input type="hidden" name="form-name" value="nominations" />
+              <label htmlFor="name" className={styles.label}>
+                What's their Twitter handle?
+              </label>
+              <input
+                id="name"
+                className={styles.input}
+                type="text"
+                name="name"
+                value={name}
+                required
+                onChange={this.handleChange}
+                onBlur={this.validateName}
+              />
+              {this.state.nameValidationMessage && (
+                <p className={styles.validationMessage}>
+                  {this.state.nameValidationMessage}
+                </p>
+              )}
+              <label htmlFor="reason" className={styles.label}>
+                Why are you nominating them?
+              </label>
+              <input
+                id="reason"
+                className={styles.input}
+                type="text"
+                name="reason"
+                value={reason}
+                required
+                onChange={this.handleChange}
+                disabled={!!this.state.nameValidationMessage}
+              />
+              <button
+                type="submit"
+                className={
+                  this.state.nameValidationMessage
+                    ? styles.submitDisabled
+                    : styles.jobButtonContainer
+                }
+                disabled={this.state.nameValidationMessage}
+              >
+                <span className={styles.jobButton}>
+                  Submit
+                  <span className={styles.arrow}>→</span>
+                </span>
+              </button>
+            </form>
+          )}
+          {this.state.formSubmitted && (
+            <div>
+              <p className={styles.formSubmit}>🎉 Thanks for nominating!</p>
+            </div>
+          )}
           <div className={styles.backContainer}>
             <Link to="/" className={styles.backLink}>
               Back to directory
