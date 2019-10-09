@@ -29,9 +29,6 @@ const Nav = props => {
         <Link to="/about" className={styles.link}>
           About
         </Link>
-        <Link to="/nominate" className={styles.link}>
-          Nominate
-        </Link>
         <Link to="/jobs" className={styles.link}>
           Jobs
         </Link>
