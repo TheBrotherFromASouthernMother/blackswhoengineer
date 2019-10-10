@@ -21,7 +21,7 @@ class App extends React.Component {
           <p>
             Blacks Who Engineer is a Twitter directory of
             accomplished Black folks in the
-            software industry. It aims to help people find notable and relevant
+            tech industry. It aims to help people find notable and relevant
             voices to follow on Twitter by parsing Twitter bios for popular
             keywords.
           </p>

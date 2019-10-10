@@ -1,6 +1,6 @@
 {
   "name": "blacks-who-engineer",
-  "description": "A Twitter directory of accomplished Black folks in the software industry.",
+  "description": "A Twitter directory of accomplished Black folks in the tech industry.",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",

@@ -80,7 +80,7 @@ class App extends React.Component {
 
           <p className={styles.p}>
             If you know a Black engineer whose voice is valuable
-            to the software industry,
+            to the tech industry,
             please fill out the form with their Twitter handle and a few words
             about why you're nominating them.
           </p>
