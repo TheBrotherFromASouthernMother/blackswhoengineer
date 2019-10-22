@@ -6,7 +6,7 @@ const Loader = props => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.heading}>
-          Blacks Who Engineer is a Twitter directory of accomplished Black folks in the software industry
+          Blacks Who Engineer is a Twitter directory of accomplished Black folks in the tech industry
         </h1>
         <div className={styles.spinner} />
       </div>

@@ -10,13 +10,13 @@ const Layout = ({ children }) => (
         {
           property: "description",
           content:
-            "A Twitter directory of accomplished Black folks in the software industry."
+            "A Twitter directory of accomplished Black folks in the tech industry."
         },
         { property: "og:title", content: "Blacks Who Engineer" },
         {
           property: "og:description",
           content:
-            "A Twitter directory of accomplished Black folks in the software industry."
+            "A Twitter directory of accomplished Black folks in the tech industry."
         },
 
         {
