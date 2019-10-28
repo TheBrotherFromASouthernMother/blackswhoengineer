@@ -13,6 +13,8 @@ const encode = data => {
     .join("&");
 };
 
+const twitterIdForFollowingList = '1129894370339983360'; // NOTE: change this to match the id of your twitter account
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -52,16 +54,14 @@ class App extends React.Component {
 
   handleSubmit = e => {
     const validation = this.validateName();
+    if (!validation && window.confirm('This form will take you to Twitter https://twitter.com/ in order to submit your nomination')) {
+      const urlEncodedTwitterHandle = encode(this.state.name);
+      const urlEncodedReason = encodeURIComponent(this.state.reason);
 
-    if (validation) {
-    } else {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "nominations", ...this.state })
-      })
-        .then(() => this.setState({ formSubmitted: true }))
-        .catch(error => console.log(error));
+      const directMessageLink =
+        `https://twitter.com/messages/compose?text=Please+consider+following+${urlEncodedTwitterHandle}+because+${urlEncodedReason}&recipient_id=${twitterIdForFollowingList}`
+
+      window.open(directMessageLink, '_blank', 'noopener,noreferrer')
     }
     e.preventDefault();
   };
@@ -132,7 +132,7 @@ class App extends React.Component {
                 disabled={this.state.nameValidationMessage}
               >
                 <span className={styles.jobButton}>
-                  Submit
+                  Send us a Twitter DM!
                   <span className={styles.arrow}>→</span>
                 </span>
               </button>
