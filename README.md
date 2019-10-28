@@ -61,6 +61,12 @@ To provide your own user list, replace the number on line 9 of the `gatsby-confi
 
 Make sure that the account provided is following at least one account and that Twitter ID on line 9 is in quotes.
 
+### Nomination
+
+In order to facilitate the nominations of new engineers to follow, the nominate page allows users to send a DM directly to the twitter account of your choice.
+
+On line 16 of the `nominate.js` file, replace the variable `twitterIdForFollowingList` with the twitter id of your desired account.
+
 ### Install dependencies
 
 If you're new to development, start by installing [Homebrew](https://brew.sh/), a macOS package manager. Paste the following command in your terminal.
