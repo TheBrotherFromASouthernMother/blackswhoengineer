@@ -53,8 +53,6 @@ class App extends React.Component {
   handleSubmit = e => {
     const validation = this.validateName();
     if (!validation && window.confirm('This form will take you to Twitter https://twitter.com/ in order to send your nomination')) {
-      const urlEncodedTwitterHandle = encode(this.state.name);
-      const urlEncodedReason = encode(this.state.reason);
       const directMessageLink =
         `https://twitter.com/messages/compose?text=Please+consider+following+${this.state.name}+because+${this.state.reason}&recipient_id=1129894370339983360`
 
@@ -129,7 +127,7 @@ class App extends React.Component {
                 disabled={this.state.nameValidationMessage}
               >
                 <span className={styles.jobButton}>
-                  Submit
+                  Send us a Twitter DM!
                   <span className={styles.arrow}>→</span>
                 </span>
               </button>
