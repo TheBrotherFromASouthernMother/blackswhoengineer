@@ -155,24 +155,66 @@ class App extends React.Component {
             </a>{" "}
             on Twitter and you will be removed.
           </p>
+          <h2 className={styles.emphasis}>Adinkra</h2>
+          <p>
+            The Blacks Who Engineer logo incorporates 8-bit
+            adaptations of Adinkra symbols&mdash;if you're not
+            already familiar with the symbols, here are some
+            resources we found valuable:
+            <ul className={styles.ul}>
+              <li className={styles.liLinks}>
+                <a href="https://en.wikipedia.org/wiki/Adinkra_symbols">
+                  Wikipedia: Adinkra Symbols
+                </a>
+              </li>
+              <li className={styles.liLinks}>
+                <a href="http://www.adinkra.org/htmls/adinkra_index.htm">
+                  Adinkra Index at adinkra.org
+                </a>
+              </li>
+              <li className={styles.liLinks}>
+                <a href="https://academicjournals.org/journal/PPR/article-full-text-pdf/A5A4C6E58407">
+                  The philosophy behind some Adinkra symbols and their communicative values in Akan
+                </a> by J. E. T. Kuwornu-Adjaottor, George Appiah and Melvin Nartey
+              </li>
+            </ul>
+
+          </p>
+          <h2 className={styles.emphasis}>Special thanks</h2>
+          <p>
+            We couldn't have built this site alone&mdash;we have
+            the following folks to thank:
+            <ul>
+              <li className={styles.liLinks}>
+                <a href="https://blackswho.design" target="_blank">
+                  Blacks Who Design
+                </a>{" "}
+                for the original inspiration
+              </li>
+              <li className={styles.liLinks}>
+                <a href="https://womenwho.design" target="_blank">
+                  Women Who Design
+                </a>{" "}
+                for allowing similar sites to fluorish by
+                open-sourcing their code!
+              </li>
+              <li className={styles.liLinks}>
+                <a href="https://jaime.design/" target="_blank">
+                  Jaime Sparr
+                </a>{" "}
+                for creating the 8-bit Adinkra designs, as
+                well as the associated logos, icons, and design
+                sensibility
+              </li>
+            </ul>
+          </p>
+
           <h2 className={styles.emphasis}>Note</h2>
           <p>
             This project is in a work-in-progress. If you have a suggestion or
             find a bug, please let me know.
           </p>
 
-          <p>
-            Special thanks to{" "}
-            <a href="https://blackswho.design" target="_blank">
-              Blacks Who Design
-            </a>{" "}
-            for inspiration, and to{" "}
-            <a href="https://womenwho.design" target="_blank">
-              Women Who Design
-            </a>{" "}
-            for allowing similar sites to fluorish
-            by open-sourcing their code!
-          </p>
           <p>
             &mdash;Christian Lowe (
             <a href="https://twitter.com/deeblekpantha" target="_blank">
