@@ -74,10 +74,10 @@ class App extends React.Component {
           <h1 className={styles.h1}>Nominate</h1>
 
           <p className={styles.p}>
-            If you know a Black engineer whose voice is valuable
-            to the tech industry,
-            please fill out the form with their Twitter handle and a few words
-            about why you're nominating them.
+            If you would like to be included on our site, or know
+            another Black engineer whose voice should be heard in
+            the tech industry, please fill out this form to let
+            us know.
           </p>
           {!this.state.formSubmitted && (
             <form
@@ -87,7 +87,7 @@ class App extends React.Component {
             >
               <input type="hidden" name="form-name" value="nominations" />
               <label htmlFor="name" className={styles.label}>
-                What's their Twitter handle?
+                Twitter username of the person you're nominating:
               </label>
               <input
                 id="name"
@@ -105,7 +105,7 @@ class App extends React.Component {
                 </p>
               )}
               <label htmlFor="reason" className={styles.label}>
-                Why are you nominating them?
+                Tell us a little about your nominee:
               </label>
               <input
                 id="reason"
